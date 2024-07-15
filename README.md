@@ -34,7 +34,8 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 
 $$ \mathbf{w} \cdot \mathbf{x} + b = 0 $$
 
-   where $\mathbf{w}$ is the weight vector, $\mathbf{x}$ is the feature vector, and $b$ is the bias term.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+where $\mathbf{w}$ is the weight vector, $\mathbf{x}$ is the feature vector, and $b$ is the bias term.
 
 2. **Decision Function**:
    - The decision function determines the class of a data point $\mathbf{x}$:
@@ -48,11 +49,11 @@ $$ f(\mathbf{x}) = \text{sign}(\mathbf{w} \cdot \mathbf{x} + b) $$
 
 $$ \min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2 $$
 
-   subject to the constraint:
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subject to the constraint:
 
 $$ y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \ge 1 \quad \forall i $$
 
-   where $y_i$ is the class label of the $i$-th data point ($y_i \in \{-1, +1\}$).
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where $y_i$ is the class label of the $i$-th data point ($y_i \in \{-1, +1\}$).
 
 4. **Kernel Trick**:
    - SVM can be extended to handle non-linear separable data by mapping the data into a higher-dimensional space using a kernel function $K(\mathbf{x}_i, \mathbf{x}_j)$.
