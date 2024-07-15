@@ -32,25 +32,25 @@ Support Vector Machine (SVM) is a supervised machine learning algorithm used for
 1. **Equation of the Hyperplane**:
    - For a set of features $\mathbf{x}$ and weights $\mathbf{w}$, the hyperplane is defined as:
 
-     $$\mathbf{w} \cdot \mathbf{x} + b = 0$$
+   $$\mathbf{w} \cdot \mathbf{x} + b = 0$$
 
    where $\mathbf{w}$ is the weight vector, $\mathbf{x}$ is the feature vector, and $b$ is the bias term.
 
 2. **Decision Function**:
    - The decision function determines the class of a data point $\mathbf{x}$:
 
-     $$f(\mathbf{x}) = \text{sign}(\mathbf{w} \cdot \mathbf{x} + b)$$
+   $$f(\mathbf{x}) = \text{sign}(\mathbf{w} \cdot \mathbf{x} + b)$$
 
    - If $f(\mathbf{x}) \ge 0$, the data point belongs to one class; otherwise, it belongs to the other class.
 
 3. **Optimization Problem**:
    - The objective is to maximize the margin, which can be formulated as a constrained optimization problem:
 
-     $$\min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2$$
+   $$\min_{\mathbf{w}, b} \frac{1}{2} \|\mathbf{w}\|^2$$
 
-     subject to the constraint:
-     
-     $$y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \ge 1 \quad \forall i$$
+   subject to the constraint:
+
+   $$y_i (\mathbf{w} \cdot \mathbf{x}_i + b) \ge 1 \quad \forall i$$
 
    where $y_i$ is the class label of the $i$-th data point ($y_i \in \{-1, +1\}$).
 
